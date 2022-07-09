@@ -1,0 +1,9 @@
+[submodule "submodule-client"]
+	path = submodule-client
+	url = git@github.com:nicoi15/submodule-client.git
+[submodule "submodule-server"]
+	path = submodule-server
+	url = git@github.com:nicoi15/submodule-server.git
+[submodule "submodule-api"]
+	path = submodule-api
+	url = git@github.com:nicoi15/submodule-api.git
