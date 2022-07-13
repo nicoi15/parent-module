@@ -24,3 +24,8 @@ jobs:
       - name: Check files
         shell: bash
         run: ls
+      - name: Archive build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: API build file
+          path: submodule-api/build/**
