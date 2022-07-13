@@ -17,16 +17,10 @@ jobs:
           distribution: 'adopt'
       - name: Build API submodule with Gradle
         run: ./gradlew submodule-api:build
-        with:
-          name: Build artifact
-          path: build/**
       - name: Build Client submodule with Gradle
         run: ./gradlew submodule-client:build
-        with:
-          name: Build artifact
-          path: build/**
       - name: Build Server submodule with Gradle
         run: ./gradlew submodule-server:build
-        with:
-          name: Build artifact
-          path: build/**
+      - name: Check files
+        shell: bash
+        run: ls
